@@ -1,0 +1,115 @@
+:root {
+    /*---- deep blue and purples ------*/
+    --color_1: #0C0032;
+    --color_2: #190061;
+    --color_3: #240090;
+    --color_4: #3500D3;
+    --color_5: #282828;
+}
+
+div.item_1 {
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 0 150px rgb(53, 0, 211);
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    z-index: 5;
+
+}
+
+div.shadow_item_1 {
+    height: 250px;
+    width: 250px;
+    background-color: var(--color_3);
+    position: absolute;
+    z-index: 2;
+    top: 150px;
+    left: 350px;
+}
+
+
+div#dna_holder {
+    height: 60px;
+    width: 60px;
+    animation-iteration-count: infinite;
+    will-change: transform;
+    transition-timing-function: linear;
+    position: absolute;
+}
+
+div.dna1 {
+    left: 340px;
+    top: 432px;
+    animation-name: rotate;
+    animation-duration: 2.3s;
+
+}
+
+div.dna2 {
+    left: 940px;
+    top: 332px;
+    animation-name: rotate;
+    animation-duration: 3s;
+}
+
+div.dna3 {
+    left: 560px;
+    top: 432px;
+    animation-name: rotate_negative;
+    animation-duration: 6s;
+}
+
+div.dna4 {
+    left: 1060px;
+    top: 432px;
+    animation-name: rotate_negative;
+    animation-duration: 9s;
+}
+
+
+div.dna5 {
+    left: 560px;
+    top: 832px;
+    animation-name: rotate;
+    animation-duration: 4s;
+}
+
+div.dna6 {
+    left: 900px;
+    top: 700px;
+    animation-name: rotate_negative;
+    animation-duration: 1s;
+}
+
+div.dna7 {
+    left: 1200px;
+    top: 700px;
+    animation-name: rotate_negative;
+    animation-duration: 2s;
+}
+
+div.dna8 {
+    left: 1000px;
+    top: 600px;
+    animation-name: rotate_negative;
+    animation-duration: 5s;
+}
+
+div.dna9 {
+    left: 200px;
+    top: 700px;
+    animation-name: rotate_negative;
+    animation-duration: 6s;
+}
+
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes rotate_negative {
+    0% {transform: rotate(360deg);}
+    100% {transform: rotate(0deg);}
+}
