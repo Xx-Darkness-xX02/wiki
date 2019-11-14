@@ -110,6 +110,27 @@ button#next:hover {
 button#next p {
     margin: 0;
 }
+
+div#q0 {
+    display: none;
+}
+
+div.item_2 {
+    background-color: #ab54ff;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    z-index: 100;
+}
+
+div.shadow_item_2 {
+    background-color: rebeccapurple;
+}
+
+
+
+
     /*----------------------------------- dna styling ---------------------------*/
 div#dna_holder {
     height: 60px;
