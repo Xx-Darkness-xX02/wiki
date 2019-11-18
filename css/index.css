@@ -188,13 +188,17 @@ div.styling_item_6:hover {
 
 
 /*----------------------------- derde div styling ------------------------*/
- div.item_3 {
+div#q2 {
+    display: block;
+}
+
+div.item_3 {
      height: 400px;
      width: 400px;
      position: relative;
      background-color: dimgrey;
      top: 240px;
-     z-index: 100;
+     z-index: 10;
      left: 100px;
      border-radius: 5px 100px 5px 100px;
  }
@@ -208,6 +212,67 @@ div.styling_item_6:hover {
      top: 250px;
      left: 400px;
      border-radius: 5px 100px 5px 100px;
+ }
+
+ div.styling_item_7 {
+     background-color: #3a3a3a;
+     height: 120px;
+     width: 30px;
+     border-radius: 40px;
+     position: absolute;
+     left: 185px;
+     top: 270px;
+     z-index: 19;
+     box-shadow: #4c4c4c 5px 4px ;
+ }
+
+ div.styling_item_8 {
+     width: 1px;
+     background-color: #d0d0d0;
+     height: 400px;
+     position: absolute;
+     top: 0;
+     left: 200px;
+ }
+
+ div.styling_item_9 {
+     width: 1px;
+     background-color: #d0d0d0;
+     height: 400px;
+     position: absolute;
+     top: 0;
+     left: 200px;
+     transform: rotate(90deg);
+ }
+
+ div.styling_item_10 {
+     border: 3px solid white;
+     color: white;
+     width: 70px;
+     height: 120px;
+     position: absolute;
+     top: 10px;
+     left: 10px;
+ }
+
+div.styling_item_10 h1 {
+    display: inline-block;
+    margin: 0;
+}
+
+div.styling_item_10 p {
+    margin: 0;
+    display: inline-block;
+}
+
+div.styling_item_10 img {
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+div#q2 div.item_3 button {
+     top: 250px;
+     left: 300px;
  }
 /*----------------------------- einde derde div styling ------------------------------*/
 
@@ -385,6 +450,7 @@ div#yin_yang {
     position: relative;
     top: 150px;
     left: 150px;
+    z-index: 19;
 }
 div#yin_yang:before {
     content: "";

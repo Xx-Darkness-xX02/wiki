@@ -6,7 +6,7 @@
         <div class="shadow_item_1"></div>
         <div class="item_1">
             <!------------ next knop -------------->
-            <button type="submit" name="next" id="next">
+            <button onclick="next()" type="submit" name="next" id="next">
                 <p>Next <i class="fas fa-caret-right"></i></p>
             </button>
             <!------------ einde next knop -------------->
@@ -23,6 +23,7 @@
             <div class="styling_item_3"></div>
         </div>
     </div>
+
     <!--------------------------- einde eerste div -------------------------------------------->
 
 
@@ -46,7 +47,7 @@
             </div>
             <!-- einde logo links boven --->
 
-            <button type="submit" name="next" id="next">
+            <button  onclick="next()"  type="submit" name="next" id="next">
                 <p>Next <i class="fas fa-caret-right"></i></p>
             </button>
         </div>
@@ -59,6 +60,23 @@
         <div class="shadow_item_3"></div>
         <div class="item_3">
             <div id="yin_yang"></div>
+            <div class="styling_item_7"></div>
+            <div class="styling_item_8"></div>
+            <div class="styling_item_9"></div>
+
+            <!-- logo links boven -->
+            <div class="styling_item_10">
+                <h1>B</h1>
+                <p>在</p>
+                <p>提</p>
+                <img src="image/plaatje1.png" alt="">
+            </div>
+            <!-- einde logo links boven -->
+
+
+            <button  onclick="next()"  type="submit" name="next" id="next">
+                <p>Next <i class="fas fa-caret-right"></i></p>
+            </button>
         </div>
     </div>
     <!--------------- einde derde div ---------------->
@@ -102,3 +120,28 @@
 
 
 </main>
+<script>
+    var showing = [1, 0, 0];
+    var questions = ['q0', 'q1', 'q2'];
+    function next() {
+        var qElems = [];
+        for (var i = 0; i < questions.length; i++) {
+            qElems.push(document.getElementById(questions[i]));
+        }
+        for (var i = 0; i < showing.length; i++) {
+            if (showing[i] == 1) {
+                qElems[i].style.display = 'none';
+                showing[i] = 0;
+                if (i == showing.length - 1) {
+                    qElems[0].style.display = 'block';
+                    showing[0] = 1;
+                } else {
+                    qElems[i + 1].style.display = 'block';
+                    showing[i + 1] = 1;
+                }
+                break;
+            }
+        }
+    }
+
+</script>
